@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ImageVec from "./form_components/ImageVec";
 import Name from "./form_components/Name";
 import Email from "./form_components/Email";
@@ -13,7 +14,6 @@ const Signup = () => {
     setShow(!show);
   };
 
-
   return (
     <div className="bg-gray-200 w-full min-h-screen md:flex md:flex-row-reverse  md:items-center">
       <ImageVec />
@@ -24,13 +24,9 @@ const Signup = () => {
         </h2>
         <p className="text-center text-xs text-gray-600 mt-2">
           Already have an account?<span className="mr-1"></span>
-          <a
-            href="/signin"
-            className="text-blue-600 hover:text-blue-700 hover:underline cursor-pointer"
-            title="Sign In"
-          >
-            Login
-          </a>
+          <span className="text-blue-600 hover:text-blue-700 hover:underline cursor-pointer">
+            <Link to="/signin">Login</Link>
+          </span>
         </p>
 
         <form className="my-8 text-sm">

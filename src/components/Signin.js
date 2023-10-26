@@ -4,6 +4,7 @@ import ImageVec from "./form_components/ImageVec";
 import Email from "./form_components/Email";
 import Password1 from "./form_components/Password1";
 import SignInButton from "./form_components/SignInButton";
+import { Link } from "react-router-dom";
 
 const Signin = () => {
   const [show, setShow] = useState(false);
@@ -21,13 +22,9 @@ const Signin = () => {
         </h2>
         <p className="text-center text-xs text-gray-600 mt-2">
           You don't have an account?<span className="mr-1"></span>
-          <a
-            href="/"
-            className="text-blue-600 hover:text-blue-700 hover:underline cursor-pointer"
-            title="Sign In"
-          >
-            Sign up
-          </a>
+          <span className="text-blue-600 hover:text-blue-700 hover:underline cursor-pointer">
+            <Link to="/">Sign up</Link>
+          </span>
         </p>
 
         <form className="my-8 text-sm">

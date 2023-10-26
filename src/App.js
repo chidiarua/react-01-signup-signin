@@ -5,14 +5,14 @@ import Signin from "./components/Signin";
 import { Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <div className="">
+    <div>
       <Header />
       <Routes>
-        <Route path="/" element={<Signup/>} /> 
-        <Route path='/signin' element={<Signin />} />
+        <Route path="/" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
       </Routes>
-      
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }
