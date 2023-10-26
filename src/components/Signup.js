@@ -13,11 +13,6 @@ const Signup = () => {
     setShow(!show);
   };
 
-  const [formInput, setFormInput] = useState({
-    name: "",
-    email: "",
-    password: "",
-  });
 
   return (
     <div className="bg-gray-200 w-full min-h-screen md:flex md:flex-row-reverse  md:items-center">
